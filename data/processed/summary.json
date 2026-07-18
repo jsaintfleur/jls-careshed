@@ -1,0 +1,177 @@
+{
+  "generated_utc": "2026-07-18T02:17:21Z",
+  "geography": "United States counties (CDC PLACES 2025 release)",
+  "counties_scored": 2956,
+  "counties_mapped": 2943,
+  "counties_excluded_insufficient_data": 187,
+  "population_covered": 317427015,
+  "tier_counts": {
+    "Lower": 1476,
+    "Moderate": 739,
+    "High": 443,
+    "Critical": 298
+  },
+  "archetype_counts": {
+    "Burdened & under-served": 1036,
+    "Lower need": 1034,
+    "Burdened, better access": 443,
+    "Healthier, under-served": 443
+  },
+  "state_avg_equity": {
+    "MS": 91.9,
+    "AR": 83.5,
+    "OK": 79.9,
+    "TN": 73.9,
+    "TX": 72.5,
+    "NM": 70.6,
+    "AL": 70.2,
+    "GA": 69.7,
+    "WV": 66.6,
+    "LA": 66.1,
+    "AK": 62.0,
+    "MO": 61.2
+  },
+  "weights": {
+    "burden": 0.35,
+    "access": 0.3,
+    "prevention": 0.15,
+    "social": 0.2
+  },
+  "top_need_counties": [
+    {
+      "county": "Zavala",
+      "state": "TX",
+      "equity_score": 100.0,
+      "tier": "Critical",
+      "archetype": "Burdened & under-served",
+      "diabetes": 21.4,
+      "uninsured": 42.8
+    },
+    {
+      "county": "Dimmit",
+      "state": "TX",
+      "equity_score": 100.0,
+      "tier": "Critical",
+      "archetype": "Burdened & under-served",
+      "diabetes": 21.5,
+      "uninsured": 41.6
+    },
+    {
+      "county": "Jim Hogg",
+      "state": "TX",
+      "equity_score": 99.9,
+      "tier": "Critical",
+      "archetype": "Burdened & under-served",
+      "diabetes": 20.2,
+      "uninsured": 41.3
+    },
+    {
+      "county": "Kusilvak",
+      "state": "AK",
+      "equity_score": 99.9,
+      "tier": "Critical",
+      "archetype": "Burdened & under-served",
+      "diabetes": 18.0,
+      "uninsured": 18.1
+    },
+    {
+      "county": "Starr",
+      "state": "TX",
+      "equity_score": 99.9,
+      "tier": "Critical",
+      "archetype": "Burdened & under-served",
+      "diabetes": 20.5,
+      "uninsured": 43.7
+    },
+    {
+      "county": "Sioux",
+      "state": "ND",
+      "equity_score": 99.8,
+      "tier": "Critical",
+      "archetype": "Burdened & under-served",
+      "diabetes": 20.1,
+      "uninsured": 13.9
+    },
+    {
+      "county": "Zapata",
+      "state": "TX",
+      "equity_score": 99.8,
+      "tier": "Critical",
+      "archetype": "Burdened & under-served",
+      "diabetes": 20.1,
+      "uninsured": 43.3
+    },
+    {
+      "county": "Oglala Lakota",
+      "state": "SD",
+      "equity_score": 99.8,
+      "tier": "Critical",
+      "archetype": "Burdened & under-served",
+      "diabetes": 23.8,
+      "uninsured": 18.9
+    },
+    {
+      "county": "Quitman",
+      "state": "MS",
+      "equity_score": 99.7,
+      "tier": "Critical",
+      "archetype": "Burdened & under-served",
+      "diabetes": 19.5,
+      "uninsured": 16.0
+    },
+    {
+      "county": "Bethel",
+      "state": "AK",
+      "equity_score": 99.7,
+      "tier": "Critical",
+      "archetype": "Burdened & under-served",
+      "diabetes": 14.7,
+      "uninsured": 15.9
+    },
+    {
+      "county": "Willacy",
+      "state": "TX",
+      "equity_score": 99.7,
+      "tier": "Critical",
+      "archetype": "Burdened & under-served",
+      "diabetes": 19.0,
+      "uninsured": 40.7
+    },
+    {
+      "county": "Hudspeth",
+      "state": "TX",
+      "equity_score": 99.6,
+      "tier": "Critical",
+      "archetype": "Burdened & under-served",
+      "diabetes": 17.4,
+      "uninsured": 36.9
+    },
+    {
+      "county": "McKinley",
+      "state": "NM",
+      "equity_score": 99.6,
+      "tier": "Critical",
+      "archetype": "Burdened & under-served",
+      "diabetes": 17.9,
+      "uninsured": 15.3
+    },
+    {
+      "county": "Todd",
+      "state": "SD",
+      "equity_score": 99.6,
+      "tier": "Critical",
+      "archetype": "Burdened & under-served",
+      "diabetes": 22.9,
+      "uninsured": 17.6
+    },
+    {
+      "county": "Sharkey",
+      "state": "MS",
+      "equity_score": 99.5,
+      "tier": "Critical",
+      "archetype": "Burdened & under-served",
+      "diabetes": 19.6,
+      "uninsured": 16.5
+    }
+  ]
+}

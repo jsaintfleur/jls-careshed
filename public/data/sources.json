@@ -1,0 +1,33 @@
+{
+  "sources": [
+    {
+      "name": "CDC PLACES \u2014 County (2025 release)",
+      "id": "swc5-untb",
+      "license": "CDC open data / U.S. Government work (public domain)",
+      "url": "https://data.cdc.gov/500-Cities-Places/PLACES-Local-Data-for-Better-Health-County-Data-20/swc5-untb",
+      "role": "Chronic burden, access, prevention, and social-need measures (model-based small-area estimates)"
+    },
+    {
+      "name": "US county cartographic boundaries (FIPS)",
+      "id": "geojson-counties-fips",
+      "license": "Public domain (U.S. Census cartographic boundaries)",
+      "url": "https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json",
+      "role": "County geometry + FIPS join spine"
+    }
+  ],
+  "computed_domains": [
+    "Chronic Burden",
+    "Access Gap",
+    "Prevention Gap",
+    "Social Vulnerability"
+  ],
+  "proposed_future_domains": [
+    "HRSA provider-shortage (careshed access)",
+    "Census ACS social vulnerability",
+    "CDC WONDER-validated explainable risk model with SHAP"
+  ],
+  "caveats": [
+    "PLACES values are model-based small-area estimates, not direct counts.",
+    "Age-adjusted prevalence preferred for cross-county comparability where available."
+  ]
+}
