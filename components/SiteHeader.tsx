@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ThemeToggle } from "@/lib/design/primitives";
 
 const NAV = [
   { href: "/", label: "Executive Overview" },
@@ -8,7 +9,7 @@ const NAV = [
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-canvas/85 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-[var(--chrome-border)] bg-[var(--chrome-bg)] backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
         <Link href="/" className="flex items-center gap-2.5">
           <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-700 text-white">
@@ -16,19 +17,22 @@ export function SiteHeader() {
               <path d="M12 21s-7-4.35-9.33-9.06C1.32 8.9 3 6 6 6c1.86 0 3.09 1.02 4 2 .91-.98 2.14-2 4-2 3 0 4.68 2.9 3.33 5.94C19 16.65 12 21 12 21Z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" />
             </svg>
           </span>
-          <span className="text-[15px] font-semibold tracking-tight text-ink">CareShed</span>
+          <span className="text-[15px] font-semibold tracking-tight text-[var(--chrome-text)]">CareShed</span>
         </Link>
-        <nav aria-label="Primary" className="flex items-center gap-1">
-          {NAV.map((n) => (
-            <Link
-              key={n.href}
-              href={n.href}
-              className="rounded-md px-3 py-1.5 text-sm font-medium text-ink-soft transition-colors hover:bg-slate-100 hover:text-ink"
-            >
-              {n.label}
-            </Link>
-          ))}
-        </nav>
+        <div className="flex items-center gap-3">
+          <nav aria-label="Primary" className="flex items-center gap-1">
+            {NAV.map((n) => (
+              <Link
+                key={n.href}
+                href={n.href}
+                className="rounded-md px-3 py-1.5 text-sm font-medium text-[var(--chrome-muted)] transition-colors hover:bg-[var(--chrome-hover)] hover:text-[var(--chrome-text)]"
+              >
+                {n.label}
+              </Link>
+            ))}
+          </nav>
+          <ThemeToggle />
+        </div>
       </div>
     </header>
   );

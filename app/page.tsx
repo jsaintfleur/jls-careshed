@@ -19,7 +19,7 @@ export default function OverviewPage() {
   return (
     <div className="mx-auto max-w-7xl px-6">
       <section className="pt-14 pb-10">
-        <p className="text-sm font-semibold uppercase tracking-wider text-brand-700">
+        <p className="text-sm font-semibold uppercase tracking-wider text-[var(--accent-text)]">
           Population Health · Health Equity
         </p>
         <h1 className="mt-3 max-w-3xl text-4xl font-semibold tracking-tight text-ink sm:text-5xl">
@@ -74,7 +74,7 @@ export default function OverviewPage() {
                 <span className="w-12 shrink-0 text-sm font-medium text-ink-soft">{name}</span>
                 <div className="h-6 flex-1 overflow-hidden rounded bg-slate-100">
                   <div
-                    className="flex h-full items-center justify-end rounded bg-brand-600 pr-2 text-xs font-medium text-white"
+                    className="flex h-full items-center justify-end rounded bg-[var(--data-primary)] pr-2 text-xs font-medium text-white"
                     style={{ width: `${(v / maxState) * 100}%` }}
                   >
                     {v}
