@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-07-18T02:17:21Z",
+  "generated_utc": "2026-07-18T12:52:22Z",
   "geography": "United States counties (CDC PLACES 2025 release)",
   "counties_scored": 2956,
   "counties_mapped": 2943,
@@ -18,142 +18,164 @@
     "Healthier, under-served": 443
   },
   "state_avg_equity": {
-    "MS": 91.9,
-    "AR": 83.5,
-    "OK": 79.9,
-    "TN": 73.9,
-    "TX": 72.5,
-    "NM": 70.6,
-    "AL": 70.2,
-    "GA": 69.7,
-    "WV": 66.6,
-    "LA": 66.1,
-    "AK": 62.0,
-    "MO": 61.2
+    "MS": 91.5,
+    "OK": 82.3,
+    "AR": 81.8,
+    "LA": 71.3,
+    "NM": 71.2,
+    "WV": 70.0,
+    "AL": 69.6,
+    "TN": 69.2,
+    "AZ": 67.5,
+    "GA": 66.7,
+    "TX": 64.8,
+    "MO": 62.8
   },
   "weights": {
-    "burden": 0.35,
-    "access": 0.3,
-    "prevention": 0.15,
-    "social": 0.2
+    "burden": 0.3,
+    "access": 0.22,
+    "provider": 0.18,
+    "prevention": 0.12,
+    "social": 0.18
+  },
+  "hpsa_coverage": {
+    "active_designations": 49475,
+    "county_state_matches": 3233,
+    "latest_update": "2026-07-16",
+    "scored_counties_with_active_hpsa": 2851
   },
   "top_need_counties": [
     {
-      "county": "Zavala",
-      "state": "TX",
+      "county": "Sioux",
+      "state": "ND",
       "equity_score": 100.0,
       "tier": "Critical",
       "archetype": "Burdened & under-served",
-      "diabetes": 21.4,
-      "uninsured": 42.8
-    },
-    {
-      "county": "Dimmit",
-      "state": "TX",
-      "equity_score": 100.0,
-      "tier": "Critical",
-      "archetype": "Burdened & under-served",
-      "diabetes": 21.5,
-      "uninsured": 41.6
-    },
-    {
-      "county": "Jim Hogg",
-      "state": "TX",
-      "equity_score": 99.9,
-      "tier": "Critical",
-      "archetype": "Burdened & under-served",
-      "diabetes": 20.2,
-      "uninsured": 41.3
+      "diabetes": 20.1,
+      "uninsured": 13.9,
+      "provider_shortage": 26.0,
+      "provider_designations": 12
     },
     {
       "county": "Kusilvak",
       "state": "AK",
-      "equity_score": 99.9,
+      "equity_score": 100.0,
       "tier": "Critical",
       "archetype": "Burdened & under-served",
       "diabetes": 18.0,
-      "uninsured": 18.1
+      "uninsured": 18.1,
+      "provider_shortage": 24.0,
+      "provider_designations": 48
     },
     {
-      "county": "Starr",
+      "county": "Zavala",
       "state": "TX",
       "equity_score": 99.9,
       "tier": "Critical",
       "archetype": "Burdened & under-served",
-      "diabetes": 20.5,
-      "uninsured": 43.7
-    },
-    {
-      "county": "Sioux",
-      "state": "ND",
-      "equity_score": 99.8,
-      "tier": "Critical",
-      "archetype": "Burdened & under-served",
-      "diabetes": 20.1,
-      "uninsured": 13.9
-    },
-    {
-      "county": "Zapata",
-      "state": "TX",
-      "equity_score": 99.8,
-      "tier": "Critical",
-      "archetype": "Burdened & under-served",
-      "diabetes": 20.1,
-      "uninsured": 43.3
-    },
-    {
-      "county": "Oglala Lakota",
-      "state": "SD",
-      "equity_score": 99.8,
-      "tier": "Critical",
-      "archetype": "Burdened & under-served",
-      "diabetes": 23.8,
-      "uninsured": 18.9
-    },
-    {
-      "county": "Quitman",
-      "state": "MS",
-      "equity_score": 99.7,
-      "tier": "Critical",
-      "archetype": "Burdened & under-served",
-      "diabetes": 19.5,
-      "uninsured": 16.0
+      "diabetes": 21.4,
+      "uninsured": 42.8,
+      "provider_shortage": 23.0,
+      "provider_designations": 12
     },
     {
       "county": "Bethel",
       "state": "AK",
-      "equity_score": 99.7,
+      "equity_score": 99.9,
       "tier": "Critical",
       "archetype": "Burdened & under-served",
       "diabetes": 14.7,
-      "uninsured": 15.9
+      "uninsured": 15.9,
+      "provider_shortage": 26.0,
+      "provider_designations": 131
     },
     {
-      "county": "Willacy",
-      "state": "TX",
-      "equity_score": 99.7,
+      "county": "Oglala Lakota",
+      "state": "SD",
+      "equity_score": 99.9,
       "tier": "Critical",
       "archetype": "Burdened & under-served",
-      "diabetes": 19.0,
-      "uninsured": 40.7
+      "diabetes": 23.8,
+      "uninsured": 18.9,
+      "provider_shortage": 25.0,
+      "provider_designations": 12
     },
     {
-      "county": "Hudspeth",
-      "state": "TX",
-      "equity_score": 99.6,
+      "county": "Lee",
+      "state": "AR",
+      "equity_score": 99.8,
       "tier": "Critical",
       "archetype": "Burdened & under-served",
-      "diabetes": 17.4,
-      "uninsured": 36.9
+      "diabetes": 17.1,
+      "uninsured": 16.0,
+      "provider_shortage": 26.0,
+      "provider_designations": 9
+    },
+    {
+      "county": "Quitman",
+      "state": "MS",
+      "equity_score": 99.8,
+      "tier": "Critical",
+      "archetype": "Burdened & under-served",
+      "diabetes": 19.5,
+      "uninsured": 16.0,
+      "provider_shortage": 23.0,
+      "provider_designations": 6
+    },
+    {
+      "county": "Jim Hogg",
+      "state": "TX",
+      "equity_score": 99.8,
+      "tier": "Critical",
+      "archetype": "Burdened & under-served",
+      "diabetes": 20.2,
+      "uninsured": 41.3,
+      "provider_shortage": 23.0,
+      "provider_designations": 3
     },
     {
       "county": "McKinley",
       "state": "NM",
-      "equity_score": 99.6,
+      "equity_score": 99.7,
       "tier": "Critical",
       "archetype": "Burdened & under-served",
       "diabetes": 17.9,
-      "uninsured": 15.3
+      "uninsured": 15.3,
+      "provider_shortage": 24.0,
+      "provider_designations": 21
+    },
+    {
+      "county": "Marshall",
+      "state": "MS",
+      "equity_score": 99.7,
+      "tier": "Critical",
+      "archetype": "Burdened & under-served",
+      "diabetes": 15.7,
+      "uninsured": 14.9,
+      "provider_shortage": 25.0,
+      "provider_designations": 8
+    },
+    {
+      "county": "McDowell",
+      "state": "WV",
+      "equity_score": 99.7,
+      "tier": "Critical",
+      "archetype": "Burdened & under-served",
+      "diabetes": 17.4,
+      "uninsured": 14.3,
+      "provider_shortage": 26.0,
+      "provider_designations": 21
+    },
+    {
+      "county": "Corson",
+      "state": "SD",
+      "equity_score": 99.6,
+      "tier": "Critical",
+      "archetype": "Burdened & under-served",
+      "diabetes": 18.3,
+      "uninsured": 14.6,
+      "provider_shortage": 26.0,
+      "provider_designations": 12
     },
     {
       "county": "Todd",
@@ -162,16 +184,31 @@
       "tier": "Critical",
       "archetype": "Burdened & under-served",
       "diabetes": 22.9,
-      "uninsured": 17.6
+      "uninsured": 17.6,
+      "provider_shortage": 23.0,
+      "provider_designations": 6
     },
     {
-      "county": "Sharkey",
+      "county": "Tunica",
       "state": "MS",
+      "equity_score": 99.6,
+      "tier": "Critical",
+      "archetype": "Burdened & under-served",
+      "diabetes": 19.9,
+      "uninsured": 16.5,
+      "provider_shortage": 23.0,
+      "provider_designations": 6
+    },
+    {
+      "county": "Northwest Arctic",
+      "state": "AK",
       "equity_score": 99.5,
       "tier": "Critical",
       "archetype": "Burdened & under-served",
-      "diabetes": 19.6,
-      "uninsured": 16.5
+      "diabetes": 14.6,
+      "uninsured": 14.2,
+      "provider_shortage": 24.0,
+      "provider_designations": 46
     }
   ]
 }

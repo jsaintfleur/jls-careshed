@@ -8,6 +8,13 @@
       "role": "Chronic burden, access, prevention, and social-need measures (model-based small-area estimates)"
     },
     {
+      "name": "HRSA Health Professional Shortage Areas \u2014 dashboard CSV",
+      "id": "HPSA_DASHBOARD.csv",
+      "license": "HRSA Data Warehouse; usage limitations: none",
+      "url": "https://data.hrsa.gov/DataDownload/DD_Files/HPSA_DASHBOARD.csv",
+      "role": "Provider-shortage score and active HPSA designation coverage for the careshed access domain"
+    },
+    {
       "name": "US county cartographic boundaries (FIPS)",
       "id": "geojson-counties-fips",
       "license": "Public domain (U.S. Census cartographic boundaries)",
@@ -18,16 +25,18 @@
   "computed_domains": [
     "Chronic Burden",
     "Access Gap",
+    "Provider Shortage",
     "Prevention Gap",
     "Social Vulnerability"
   ],
   "proposed_future_domains": [
-    "HRSA provider-shortage (careshed access)",
     "Census ACS social vulnerability",
     "CDC WONDER-validated explainable risk model with SHAP"
   ],
   "caveats": [
     "PLACES values are model-based small-area estimates, not direct counts.",
-    "Age-adjusted prevalence preferred for cross-county comparability where available."
+    "Age-adjusted prevalence preferred for cross-county comparability where available.",
+    "HRSA HPSA county matches are joined by county name and state because the dashboard CSV does not include county FIPS.",
+    "Counties with no active HRSA HPSA match receive a provider-shortage score of zero for this domain."
   ]
 }

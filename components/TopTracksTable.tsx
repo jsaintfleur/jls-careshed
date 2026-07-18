@@ -3,24 +3,25 @@ import type { Summary } from "@/lib/types";
 
 export function TopTracksTable({ rows }: { rows: Summary["top_need_counties"] }) {
   return (
-    <div className="overflow-hidden rounded-xl border border-slate-200 bg-panel shadow-card">
+    <div className="overflow-hidden rounded-xl border border-[var(--border-default)] bg-[var(--bg-panel)] shadow-[var(--shadow-1)]">
       <table className="w-full text-sm">
         <caption className="sr-only">
-          Highest health-equity-need counties with state, tier, equity score, diabetes prevalence, and uninsured rate.
+          Highest health-equity-need counties with state, tier, equity score, diabetes prevalence, uninsured rate, and provider shortage score.
         </caption>
         <thead>
-          <tr className="border-b border-slate-200 bg-slate-50 text-left text-xs uppercase tracking-wide text-ink-muted">
+          <tr className="border-b border-[var(--border-default)] bg-[var(--bg-inset)] text-left text-xs uppercase tracking-wide text-[var(--text-tertiary)]">
             <th scope="col" className="px-4 py-2.5 font-medium">County</th>
             <th scope="col" className="px-4 py-2.5 font-medium">Tier</th>
             <th scope="col" className="px-4 py-2.5 text-right font-medium">Equity need</th>
             <th scope="col" className="px-4 py-2.5 text-right font-medium">Diabetes</th>
             <th scope="col" className="px-4 py-2.5 text-right font-medium">Uninsured</th>
+            <th scope="col" className="px-4 py-2.5 text-right font-medium">HPSA</th>
           </tr>
         </thead>
         <tbody>
           {rows.map((r, i) => (
-            <tr key={i} className="border-b border-slate-100 last:border-0 hover:bg-slate-50/60">
-              <td className="px-4 py-2.5 font-medium text-ink">
+            <tr key={i} className="border-b border-[var(--border-subtle)] last:border-0 hover:bg-[var(--bg-inset)]">
+              <td className="px-4 py-2.5 font-medium text-[var(--text-primary)]">
                 {r.county}, {r.state}
               </td>
               <td className="px-4 py-2.5">
@@ -32,9 +33,10 @@ export function TopTracksTable({ rows }: { rows: Summary["top_need_counties"] })
                   {r.tier}
                 </span>
               </td>
-              <td className="px-4 py-2.5 text-right font-semibold tabular-nums text-ink">{r.equity_score}</td>
-              <td className="px-4 py-2.5 text-right tabular-nums text-ink-soft">{fmtPct(r.diabetes)}</td>
-              <td className="px-4 py-2.5 text-right tabular-nums text-ink-soft">{fmtPct(r.uninsured)}</td>
+              <td className="px-4 py-2.5 text-right font-semibold tabular-nums text-[var(--text-primary)]">{r.equity_score}</td>
+              <td className="px-4 py-2.5 text-right tabular-nums text-[var(--text-secondary)]">{fmtPct(r.diabetes)}</td>
+              <td className="px-4 py-2.5 text-right tabular-nums text-[var(--text-secondary)]">{fmtPct(r.uninsured)}</td>
+              <td className="px-4 py-2.5 text-right tabular-nums text-[var(--text-secondary)]">{r.provider_shortage ?? "—"}</td>
             </tr>
           ))}
         </tbody>

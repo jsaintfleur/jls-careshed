@@ -10,7 +10,7 @@ const NAV = [
 export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-[var(--chrome-border)] bg-[var(--chrome-bg)] backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
+      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-2 px-4 py-3 sm:px-6 md:flex-nowrap">
         <Link href="/" className="flex items-center gap-2.5">
           <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-700 text-white">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -19,8 +19,11 @@ export function SiteHeader() {
           </span>
           <span className="text-[15px] font-semibold tracking-tight text-[var(--chrome-text)]">CareShed</span>
         </Link>
-        <div className="flex items-center gap-3">
-          <nav aria-label="Primary" className="flex items-center gap-1">
+        <div className="order-2 md:order-3">
+          <ThemeToggle />
+        </div>
+        <div className="order-3 w-full overflow-x-auto md:order-2 md:ml-auto md:w-auto md:overflow-visible">
+          <nav aria-label="Primary" className="flex min-w-max items-center gap-1 md:justify-end">
             {NAV.map((n) => (
               <Link
                 key={n.href}
@@ -31,7 +34,6 @@ export function SiteHeader() {
               </Link>
             ))}
           </nav>
-          <ThemeToggle />
         </div>
       </div>
     </header>
