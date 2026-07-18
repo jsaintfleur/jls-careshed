@@ -35,7 +35,7 @@ export default function MethodologyPage() {
               {meta.sources.map((s) => (
                 <tr key={s.id} className="border-t border-slate-100">
                   <td className="px-4 py-2.5">
-                    <a href={s.url} className="font-medium text-brand-700 underline-offset-2 hover:underline" target="_blank" rel="noreferrer">
+                    <a href={s.url} className="font-medium text-[var(--accent-text)] underline-offset-2 hover:underline" target="_blank" rel="noreferrer">
                       {s.name}
                     </a>
                     <span className="block text-xs text-ink-faint">{s.id}</span>
