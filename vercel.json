@@ -1,0 +1,16 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "jls-careshed.vercel.app" }],
+      "destination": "https://careshed.jeanlucs.com/",
+      "permanent": true
+    },
+    {
+      "source": "/:path+",
+      "has": [{ "type": "host", "value": "jls-careshed.vercel.app" }],
+      "destination": "https://careshed.jeanlucs.com/:path+",
+      "permanent": true
+    }
+  ]
+}
